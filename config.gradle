@@ -1,0 +1,33 @@
+ext {
+    android = [
+            compileSdkVersion              : 24,
+            buildToolsVersion              : "23.0.1",
+            applicationId                  : "com.qiqiaoban.rommel.rohub",
+            minSdkVersion                  : 18,
+            targetSdkVersion               : 24,
+            versionCode                    : 1,
+            versionName                    : "1.0.1",
+            testInstrumentationRunner      : "android.support.test.runner.AndroidJUnitRunner"
+    ]
+    supportLibrary = '25.2.0'
+    kotlin_version = '1.0.5-3'
+    anko_version = '0.8.2'
+    retrofit2 = '2.1.0'
+    dependencies = [
+            junit              : "junit:junit:4.12",
+            appCompat          : "com.android.support:appcompat-v7:${supportLibrary}",
+            supportAnnotation  : "com.android.support:support-annotations:${supportLibrary}",
+            junit              : "junit:junit:4.12",
+            kotlin             : "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version",
+            anko               : "org.jetbrains.anko:anko-common:$anko_version",
+            gson               : "com.google.code.gson:gson:2.7",
+            picasso            : "com.squareup.picasso:picasso:2.5.2",
+            retrofit2Retrofit  : "com.squareup.retrofit2:retrofit:${retrofit2}",
+            retrofit2Adapter   : "com.squareup.retrofit2:adapter-rxjava:${retrofit2}",
+            retrofit2Converter : "com.squareup.retrofit2:converter-gson:${retrofit2}",
+            rxjava             : "io.reactivex:rxjava:1.1.6",
+            rxandroid          : "io.reactivex:rxandroid:1.2.1",
+            litepal            : "org.litepal.android:core:1.3.2" ,
+            okHttp             : "com.squareup.okhttp3:okhttp:3.4.1",
+    ]
+}
